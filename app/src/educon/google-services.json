@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "431546065341",
+    "project_id": "educon-2d5ea",
+    "storage_bucket": "educon-2d5ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431546065341:android:ca1c2e99d8c5efbf5df2d4",
+        "android_client_info": {
+          "package_name": "com.tt.educon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431546065341-ms4p36o32s95rr4n2aahmtharlpsje9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD46gHCYgccOcred91PnwEgSyZBg-axR0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431546065341-ms4p36o32s95rr4n2aahmtharlpsje9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

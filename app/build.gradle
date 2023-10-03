@@ -1,0 +1,166 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.appdistribution'
+    id 'com.google.firebase.crashlytics'
+
+}
+
+android {
+    namespace 'com.tt.skolarrs'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.tt.skolarrs"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        signingConfigs {
+            skollarsRelease {
+                storeFile file('D:\\TTProjects\\Skolarrs\\skollars.jks')
+                storePassword 'Skollars@2023'
+                keyPassword 'Skollars@2023'
+                keyAlias 'key0'
+            }
+            educonRelease {
+                storeFile file('D:\\TTProjects\\Skolarrs\\educon.jks')
+                storePassword 'Educon@2023'
+                keyPassword 'Educon@2023'
+                keyAlias 'key0'
+            }
+            skyappzRelease {
+                storeFile file('D:\\TTProjects\\Skolarrs\\skyappz.jks')
+                storePassword 'Skyappz@2023'
+                keyPassword 'Skyappz@2023'
+                keyAlias 'key0'
+            }
+        }
+
+
+    }
+
+    buildTypes {
+
+        flavorDimensions 'default'
+        productFlavors {
+            skollars {
+                applicationId "com.tt.skolarrs"
+                dimension 'default'
+                resValue("mipmap", "ic_launcher", "@mipmap/ic_launcher")
+                resValue("drawable", "app_logo", "@drawable/app_logo")
+                buildConfigField "String", "BASE_URL", '""'
+                buildConfigField "String", "BASE_URL1", '""'
+                signingConfig signingConfigs.skollarsRelease
+            }
+
+            educon {
+                applicationId "com.tt.educon"
+                dimension 'default'
+                resValue("mipmap", "ic_launcher", "@mipmap/ic_launcher")
+                resValue("drawable", "app_logo", "@drawable/app_logo")
+//                buildConfigField "String", "BASE_URL", '"http://43.204.90.32:3001/"'
+                buildConfigField "String", "BASE_URL", '"http://52.66.35.154:3001"'
+
+                // buildConfigField "String", "BASE_URL1", '"http://43.204.90.32/"'
+                buildConfigField "String", "BASE_URL1", '"http://52.66.35.154/"'
+                signingConfig signingConfigs.educonRelease
+            }
+
+            skyappz {
+                applicationId "com.tt.skyappz"
+                dimension 'default'
+                resValue("mipmap", "ic_launcher", "@mipmap/ic_launcher")
+                resValue("drawable", "app_logo", "@drawable/app_logo")
+                buildConfigField "String", "BASE_URL", '"http://52.66.35.154:3001"'
+                buildConfigField "String", "BASE_URL1", '"http://52.66.35.154/"'
+                signingConfig signingConfigs.skyappzRelease
+            }
+        }
+
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'androidx.test:monitor:1.6.1'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+//    // Rest API
+//    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+//    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+//    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+
+    // Import the BoM for the Firebase platform
+    implementation(platform("com.google.firebase:firebase-bom:32.2.3"))
+
+    // Add the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation("com.google.firebase:firebase-crashlytics-ktx")
+    implementation("com.google.firebase:firebase-analytics-ktx")
+
+
+    //Firebase push notification
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.2.1'
+    //google.service.json file name was renamed if you need to work push notification properly rename the service.json file and in manifest update the service
+
+    //Circular ImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Rest API
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    //MVVM
+    def lifecycle_version = '2.5.1'
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+   implementation 'com.github.axet:android-audio-library:1.1.20'
+//
+//   implementation 'com.github.axet:android-library:1.35.30'
+
+}

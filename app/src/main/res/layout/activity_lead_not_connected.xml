@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tt.skolarrs.view.activity.LeadNotConnectedActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/interestedGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/card_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/leadResponse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/primary_color"
+                        android:padding="20dp"
+                        android:text="@string/not_connected"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/intrestedRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/out_of_coverage"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/invalid_number"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/did_not_pick"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/busy_on_another_call"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/switchoff"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/notes"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="start|end"
+                android:hint="@string/other_notes"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="50dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size"
+                app:cornerRadius="15dp"
+                app:strokeColor="@color/primary_color"
+                app:strokeWidth="1dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

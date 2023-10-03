@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <!-- TextView for displaying text in the action bar -->
+    <TextView
+        android:id="@+id/custom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:paddingVertical="20dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:textSize="14sp" />
+
+    <!-- ImageView for displaying an image in the action bar -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/custom_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:tint="@color/white"
+            android:src="@drawable/notification" />
+        <TextView
+            android:id="@+id/notificationCount"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="2"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:background="@drawable/ic_oval"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/filterIcon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:tint="@color/white"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:src="@drawable/filter" />
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "714557903666",
+    "project_id": "skyappz-18d13",
+    "storage_bucket": "skyappz-18d13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714557903666:android:b49470e33c9e57d991bd2b",
+        "android_client_info": {
+          "package_name": "com.tt.skyappz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714557903666-c01s2uepm11h4v4rlmhc6it6kc814fpv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtHdjoJd8fLAsc8OL5Q4KAjJsFb9H-lvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714557903666-c01s2uepm11h4v4rlmhc6it6kc814fpv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

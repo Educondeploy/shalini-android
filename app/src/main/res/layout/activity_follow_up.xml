@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.FollowUpActivity">
+
+    <include layout="@layout/toolbar_back"
+        android:id="@+id/include"/>
+
+
+    <LinearLayout
+        android:layout_below="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_background"
+            android:padding="20dp"
+            android:layout_marginVertical="20dp"
+            android:textColor="@color/black"
+            android:hint="@string/select_date"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_background"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:hint="@string/select_time"/>
+
+        <Spinner
+            android:id="@+id/followUpType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_background"
+            android:padding="20dp"
+            android:entries="@array/followUpType"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:hint="@string/select_followUpType"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/submit"
+            android:layout_margin="50dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size"
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/primary_color"
+            app:strokeWidth="1dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

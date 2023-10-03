@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "961775586642",
+    "project_id": "skolarrs-e737e",
+    "storage_bucket": "skolarrs-e737e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961775586642:android:dec394214f1501b6ef7e8b",
+        "android_client_info": {
+          "package_name": "com.tt.skolarrs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961775586642-6o5k22vlnkq7amorr1qohf5rjvmet0el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgJ4DgDlMha5wws9UEq0Unl8Lyki_5Wng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961775586642-6o5k22vlnkq7amorr1qohf5rjvmet0el.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

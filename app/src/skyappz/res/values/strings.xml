@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">Skyappz</string>
+    <string name="follow_up">FOLLOW UP</string>
+    <string name="follow_up_smallercase">Follow Up</string>
+    <string name="dashBoard">DASHBOARD</string>
+    <string name="lead">LEAD</string>
+    <string name="admission_closed">Admission closed</string>
+    <string name="permission">PERMISSION</string>
+    <string name="leave">LEAVE</string>
+    <string name="logout">LOGOUT</string>
+    <string name="interest">INTEREST</string>
+    <string name="switchOff">SWITCHOFF</string>
+    <string name="out_of_coverage">Out of coverage</string>
+    <string name="did_not_pick">Did not pick</string>
+    <string name="busy_on_another_call">Busy on other call</string>
+    <string name="apply">APPLY</string>
+    <string name="Apply">Apply</string>
+    <string name="view_calender">VIEW CALENDER</string>
+    <string name="calender_view">CALENDER VIEW</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="menu">MENU</string>
+    <string name="interested">Interested</string>
+    <string name="hot">Hot</string>
+    <string name="warm">Warm</string>
+    <string name="cold">Cold</string>
+    <string name="not_interested">Not Interested</string>
+    <string name="disconnect_the_call">User disconnect the call</string>
+    <string name="enter_a_valid_mobile_number">Enter a valid mobile number</string>
+    <string name="switchoff">Switch Off</string>
+    <string name="errorMsg">Something went wrong</string>
+    <string name="invalid_number">Invalid Number</string>
+    <string name="isEmpty_errorMsg">Please fill the valid details</string>
+    <string name="enter_the_valid_email">Enter the valid Email</string>
+    <string name="password_does_not_match">Password does not match</string>
+    <string name="password_must_contains">Password must contains 8 characters</string>
+    <string name="enter_digit_mobile_number">Enter 10 digit mobile number</string>
+    <string name="loading">Loading</string>
+    <string name="Please_turn_on_your_internet_connection">Please_turn_on_your_internet_connection</string>
+    <string name="hey_hi_there">Hey Hi There!</string>
+    <string name="let_the_happiness_begin">Let the Happiness Begin</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="press_once_again_to_exit">Press once again to exit</string>
+    <string name="contact_permission_granted">Contact permission granted</string>
+    <string name="contact_permission_denied">Contact permission denied</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="connect_history">Connect History</string>
+    <string name="view">View</string>
+    <string name="was_call_connected">Was call connected?</string>
+    <string name="connected">Connected</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="customer_say_not_interest">Customer say not interest</string>
+    <string name="user_disconnect_the_call">User disconnect the call</string>
+    <string name="lead_connected">Lead Connected</string>
+    <string name="lead_not_connected">Lead Not Connected</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="select_custom_date">Select custom date</string>
+    <string name="default_notification_channel_id">com.tt.skyappz</string>
+    <string name="status">Status: </string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="please_turn_on_your_internet_connection">\"Please turn on your internet connection \"</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="select_followUpType">Select FollowUp type</string>
+    <string name="sorry_this_feature_is_not_supported_yet">Sorry, this feature is not supported yet</string>
+    <string name="select_from_date">Select from date</string>
+    <string name="select_to_date">Select to date</string>
+    <string name="reason">Reason</string>
+    <string name="message">Message</string>
+<!--    <string name="whatsapp_share_content">Warm greetings from Educon Group Of Companies\n\n            Educon Educational Trust offers top-quality educational services with expert counseling to help you achieve your academic and professional goals.Educon is committed to maintaining high standards and quality through friendly counseling and the best-qualified advice.\n\nOffice address\n101,\nR.K.Nagar,\nSelvi MessBackside,\nSeelanaickenpatty Bye-Pass\nSalem-636201.\n\nWebsite: http://www.educongroups.com/</string>-->
+    <string name="whatsapp_share_content">Greetings from Skyappz Software India Pvt Ltd!!\n\n
+Your TeleCRM Demo is confirmed!\n\n
+🔍 S1: Fix Employee tracking and monitoring and Log\n
+✅ S2: Fix Lead Leakage\n
+📞 S3: Never Miss a follow-up\n
+🚫 S4: Monitor team members wasting time\n\n
+📈 Last station: Guaranteed growth for your business\n\n
+🚀 Will see you in the live demo.\n\n
+Our valuable clients are Job platform, Grey Matters, Maya Bazaar, Sri Murugalaya Silks and
+Vkanya, IQVIA,Kobhu kulalar Sangam , Metro plastic , Salem Town vaniyar Chettiar
+Sangam.\n\n
+Thanks
+Skyappz Team\n\n\n
+Contact us:\n
+Phone : 9600222284 / 9994479923\n
+Email Id : info@skyappzsoftware.in\n
+Website : https://skyappzsoftware.in</string>
+    <array name="leadResponse">
+        <item>Interested</item>
+        <item>Not Interested</item>
+    </array>
+    <array name="followUpType">
+        <item>Call</item>
+        <item>Whatsapp</item>
+    </array>
+
+    <style name="SpinnerTextStyle" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <string name="title_activity_leave_list_fragment">LeaveListFragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="username">Username</string>
+    <string name="recently_applied_leaves">Recently Applied Leaves</string>
+    <string name="recently_applied_permissions">Recently Applied Permissions</string>
+    <string name="applied_date">Applied Date</string>
+    <string name="Status">Status</string>
+    <string name="time">Time</string>
+    <string name="select_from_time">Select from time</string>
+    <string name="select_to_time">Select to time</string>
+    <string name="permission_apply">Permission Apply</string>
+    <string name="leave_apply">Leave Apply</string>
+    <string name="no_leave_data_found">No leave data found</string>
+    <string name="no_permission_data_found">No permission data found</string>
+    <string name="report">REPORT</string>
+    <string name="no_report_found">Report not found</string>
+    <string name="select_month_from_calender">Select month from calender</string>
+    <string name="date">Date</string>
+    <string name="holiday">Holiday</string>
+    <string name="no_holidays_data_found">No holidays data found</string>
+    <string name="notification_not_found">Notification not found</string>
+    <string name="please_select_date">Please select date</string>
+    <string name="please_select_date_or_you_want_clear_the_data_means_click_on_close_icon">Please select date or you want clear the filter means click on close icon</string>
+    <string name="please_select_fromTime">Please select from time</string>
+    <string name="please_select_toTime">Please select to time</string>
+    <string name="please_select_from_date">Please select from date</string>
+    <string name="please_select_to_date">Please select to date</string>
+    <string name="notification">Notification</string>
+    <string name="other_notes">Other notes</string>
+    <string name="lead_added">Lead Added</string>
+    <string name="status1">Status:</string>
+    <string name="message1">Message: </string>
+    <string name="next_follow_up">Next Follow Up:</string>
+    <string name="please_allow_contact_permission">Call log and contact access is denied, Please allow contact permission</string>
+    <string name="completed">Completed</string>
+    <string name="please_select_the_date">Please select the date</string>
+    <string name="please_select_the_time">Please select the time</string>
+    <string name="please_select_the_status">Please select the status</string>
+    <string name="please_select_the_item">Please select the item</string>
+
+</resources>
